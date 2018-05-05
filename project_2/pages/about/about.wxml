@@ -1,0 +1,41 @@
+<view class="userinfo">
+  <view class='on'>
+    <image src=''></image>
+  </view>
+
+  <view class='under'>
+    <text class="user-nickname">{{userInfo.nickName}}</text>
+    <text class="user-motto">{{motto}}</text>
+  </view>
+
+  <image bindtap="bindViewTap" src="{{userInfo.avatarUrl}}" background-size="cover" class='aboutAvatar'></image>
+
+</view>
+
+<!-- <view class='about-info'>
+  <view class='about-info-datail' bindtap='showdetailinfo1'>
+    <text>{{submitNumber}}</text>
+    <text>发起</text>
+  </view>
+  <view class='about-info-datail second' bindtap='showdetailinfo2'>
+    <text>{{joinNumber}}</text>
+    <text>参与</text>
+  </view>
+</view> -->
+
+
+<view class='infoCard'>
+  <view class='infoCardHeader'>
+    <text class='infoCardTitle'>我的活动</text>
+    <!-- <text class='infoCardMore'>查看更多</text> -->
+  </view>
+  <text class='infoCardContent'>内容内容内容内容内容内容内容内容内容内容</text>
+</view>
+<view class='about-function'>
+  <view class='about-function-detail'>
+    <text>联系客服</text>
+  </view>
+  <view class='about-function-detail'>
+    <text>帮助中心</text>
+  </view>
+</view>

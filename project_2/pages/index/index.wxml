@@ -1,0 +1,77 @@
+<view class="page__bd">
+    <view class="weui-search-bar">
+      <view class="weui-search-bar__form">
+        <view class="weui-search-bar__box">
+          <icon class="weui-icon-search_in-box" type="search" size="14"></icon>
+          <input type="text" class="weui-search-bar__input" placeholder="搜索" value="{{inputVal}}" focus="{{inputShowed}}" bindinput="inputTyping" />
+          <view class="weui-icon-clear" wx:if="{{inputVal.length > 0}}" bindtap="clearInput">
+            <icon type="clear" size="14"></icon>
+          </view>
+        </view>
+        <label class="weui-search-bar__label" hidden="{{inputShowed}}" bindtap="showInput">
+          <icon class="weui-icon-search" type="search" size="14"></icon>
+          <view class="weui-search-bar__text">搜索</view>
+        </label>
+      </view>
+      <view class="weui-search-bar__cancel-btn" hidden="{{!inputShowed}}" bindtap="hideInput">取消</view>
+    </view>
+    <view class="weui-cells searchbar-result" wx:if="{{inputVal.length > 0}}">
+      <navigator url="" class="weui-cell" hover-class="weui-cell_active">
+        <view class="weui-cell__bd">
+          <view>实时搜索文本</view>
+        </view>
+      </navigator>
+      <navigator url="" class="weui-cell" hover-class="weui-cell_active">
+        <view class="weui-cell__bd">
+          <view>实时搜索文本</view>
+        </view>
+      </navigator>
+      <navigator url="" class="weui-cell" hover-class="weui-cell_active">
+        <view class="weui-cell__bd">
+          <view>实时搜索文本</view>
+        </view>
+      </navigator>
+      <navigator url="" class="weui-cell" hover-class="weui-cell_active">
+        <view class="weui-cell__bd">
+          <view>实时搜索文本</view>
+        </view>
+      </navigator>
+    </view>
+  </view>
+
+<view class="card" catchtap='getDetail' wx:for="{{['','','']}}" >
+  <view class='card-header'>
+    <view class='header-profile'>
+      <image src='/imgs/qi.jpg' class='user-profile-img' catchtap='getUserInfo'></image>
+    </view>
+    <view class='header-info'>
+      <view class='header-username'>
+        <text catchtap='getUserInfo'>{{userName}}</text>
+      </view>
+      <view class='header-time'>
+        <text>{{time}}</text>
+      </view>
+    </view>
+  </view>
+  <view class='card-body'>
+    <text >{{content}}</text>
+    <view class="weui-grids my-grids">
+      <block wx:for="{{imgList}}" wx:key="*this">
+        <navigator class="weui-grid my-grid" hover-class="weui-grid_active">
+          <image class="weui-grid__icon my_icon" src="{{item}}" data-src="{{item}}" catchtap='photoTap' mode='aspectFill' />
+        </navigator>
+      </block>
+    </view>
+
+  </view>
+  <view class='card-footer'>
+    <view class='location'>
+      <image src='/imgs/map.png' class='footer-img1'></image>
+      <text class='footer-text1'>{{location}}</text>
+    </view>
+    <view class='joiner'>
+      <image src='/imgs/process.png' class='footer-img2'></image>
+      <text class='footer-text2'>Partner {{count}}</text>
+    </view>
+  </view>
+</view>

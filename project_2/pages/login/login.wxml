@@ -1,0 +1,5 @@
+<!--pages/login/login.wxml-->
+
+<navigator open-type="getUserInfo" bindgetuserinfo="userInfoHandler" >
+<image src='/imgs/qi.jpg'></image></navigator>
+<button open-type="getUserInfo" bindgetuserinfo="userInfoHandler"> 点击登陆 </button>

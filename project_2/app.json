@@ -1,0 +1,49 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/about/about",
+    "pages/add/add",
+    "pages/chat/chat",
+    "pages/detail/detail",
+    "pages/message/message",
+    "pages/userinfo/userinfo",
+    "pages/login/login",
+    "pages/result/result"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "去玩吧",
+    "navigationBarTextStyle": "black",
+    "backgroundColor": "#dedede",
+    "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "imgs/index.png",
+        "selectedIconPath": "imgs/index-selected.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/add/add",
+        "iconPath": "imgs/add.png",
+        "selectedIconPath": "imgs/add-selected.png",
+        "text": "新增"
+      },
+      {
+        "pagePath": "pages/message/message",
+        "iconPath": "imgs/message.png",
+        "selectedIconPath": "imgs/message-selected.png",
+        "text": "消息"
+      },
+      {
+        "pagePath": "pages/about/about",
+        "iconPath": "imgs/about.png",
+        "selectedIconPath": "imgs/about-selected.png",
+        "text": "我的"
+      }
+    ]
+  }
+}

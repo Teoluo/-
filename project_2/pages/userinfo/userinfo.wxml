@@ -1,0 +1,12 @@
+<!--pages/userinfo/userinfo.wxml-->
+<view class="userinfo">
+  <block>
+    <image bindtap="bindViewTap" class="userinfo-avatar" src="/imgs/qi.jpg" background-size="cover"></image>
+    <text class="userinfo-nickname">Teoluo</text>
+  </block>
+  <view class="usermotto">
+    <text class="user-motto">Hello World</text>
+  </view>
+</view>
+
+<button bindtap='toChatWith'>私信戳Ta</button>

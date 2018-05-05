@@ -1,0 +1,49 @@
+<view class="card">
+  <view class='card-header'>
+    <view class='header-profile'>
+      <image src='/imgs/qi.jpg' class='user-profile-img' catchtap='getUserInfo'></image>
+    </view>
+    <view class='header-info'>
+      <view class='header-username'>
+        <text catchtap='getUserInfo'>{{userName}}</text>
+      </view>
+      <view class='header-time'>
+        <text>{{time}}</text>
+      </view>
+    </view>
+  </view>
+  <view class='card-body'>
+    <text>{{content}}</text>
+    <view class="weui-grids my-grids">
+      <block wx:for="{{imgList}}" wx:key="*this">
+        <navigator class="weui-grid my-grid" hover-class="weui-grid_active">
+          <image class="weui-grid__icon my_icon" src="{{item}}" data-src="{{item}}" catchtap='photoTap' mode='aspectFill' />
+        </navigator>
+      </block>
+    </view>
+
+  </view>
+  <view class='card-footer'>
+    <view class='location'>
+      <image src='/imgs/map.png' class='footer-img1'></image>
+      <text class='footer-text1'>{{location}}</text>
+    </view>
+    <view class='joiner'>
+      <image src='/imgs/process.png' class='footer-img2'></image>
+      <text class='footer-text2'>Partner {{count}}</text>
+    </view>
+  </view>
+</view>
+
+<view class='footer'>
+  <view>
+    <button class='buttonStyle' bindtap='btnJoin'>我也想参加</button>
+  </view>
+  <view class='show'>
+    <view class='showPartners' wx:for="{{partners}}">
+      <view class='partner'>
+        <image src='{{item.urls}}'></image>
+      </view>
+    </view>
+  </view>
+</view>
