@@ -1,0 +1,73 @@
+<view class='box'>
+  <view class='partOne'>
+    <image src='{{imgs[0]||posterUrl}}' mode='aspectFill' class='partOneImg'></image>
+  </view>
+  <view class='partTwo'>
+    <image src='{{aInfo.hostAvatar}}' mode='aspectFill' class='partTwoImg'></image>
+  </view>
+  <view class='partThr'>
+    <view class='title'>{{aInfo.hostName}}</view>
+    <view class='subTitle'>想和你一起去</view>
+    <view class='content'>{{aInfo.content}}</view>
+    <view class='subContent'>日期：{{aInfo.holdDate}}</view>
+    <view class='subContent'>时间：{{aInfo.holdTime}}</view>
+    <view class='subContent'>地点：{{aInfo.placeName}}</view>
+
+         
+    <swiper indicator-dots="{{flase}}" interval="{{1000}}" duration="{{800}}" display-multiple-items="{{1}}"  next-margin="500rpx" wx:if="{{imgs[0]!=''}}" class='mySwiper'>
+      <block wx:for="{{imgs}}" wx:key="{{*this}}" class="turn">
+        <swiper-item class="myItem" >
+          <image src="{{item}}" data-src="{{item}}" class="slide-image myImg" mode="aspectFill" bindtap='clickImg' />
+        </swiper-item>
+      </block>
+    </swiper> 
+
+    <view class='card-footer'>
+      <view class='location' catchtap='getLocation'>
+        <image src='/imgs/map.png' class='footer-img1'></image>
+        <text class='footer-text1'>{{aInfo.placeName}}</text>
+      </view>
+      <view class='joiner' catchtap='lookPartner' data-aid='{{aid}}'>
+        <image src='/imgs/process.png' class='footer-img2'></image>
+        <text class='footer-text2'>Partner {{partners.length}}</text>
+      </view>
+    </view>
+  </view>
+
+
+  <view class='commentBorad'>
+    <view class='write'>
+      <text bindtap='submitComment' data-aid='{{aInfo._id}}' data-userName='{{userInfo.nickName}}' data-userAvatar='{{userInfo.avatarUrl}}'>写留言</text>
+    </view>
+
+    <view class='userComments' wx:for="{{comment}}">
+      <view class='commentAvatar'>
+        <image src='{{item.userAvatar}}' class='userAvatar' mode="aspectFill"></image>
+      </view>
+      <view class='info'>
+        <view class='userInfo'>
+          <view>{{item.userName}}</view>
+          <view>{{item.updateTime}}</view>
+        </view>
+        <view class='comment'>
+          <text>{{item.userComment}}</text>
+
+        </view>
+        <view>
+          <text class='delete' wx:if="{{userID==item.created_by}}" bindtap='deleteComment' data-commentId='{{item.id}}'>删除</text>
+          
+        </view>
+      </view>
+    </view>
+
+
+    <view class='noComment' wx:if="{{comment.length==0}}">
+      <text>快来成为第一个写下评论的人吧</text>
+    </view>
+  </view>
+
+  <view class='options'>
+      <button class='buttonStyle' bindtap='btnJoin' wx:if="{{!isPartner}}">我也想参加</button>
+      <button class='buttonStyle' bindtap='btnCancel' wx:if="{{isPartner}}">取消</button>
+  </view>
+</view>

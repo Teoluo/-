@@ -1,0 +1,8 @@
+<view class='contain'>
+  <view>
+    <textarea placeholder='所有人可见哦' class='commentTextarea' bindinput='textInput'></textarea>
+  </view>
+  <view>
+    <button bindtap='submitComment'>提交</button>
+  </view>
+</view>

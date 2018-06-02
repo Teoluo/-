@@ -1,0 +1,49 @@
+<view class='main'>
+  <view class="userinfo">
+    <view class='under'>
+      <view class='underColor'>
+      </view>
+      <image src="{{userInfo.avatarUrl}}" background-size="cover" class='aboutAvatar'></image>
+      <text class="userNickname">{{userInfo.nickName}}</text>
+      
+      <text wx:if="{{userInfo==null}}" bindtap='login' style='align-self:center' class='login'>点击登陆</text>
+    </view>
+  </view>
+
+  <view class='myActivityCard'>
+    <view class='myCardTitle'>
+      <text class='CardTitle'>我的活动</text>
+      <text class='more' bindtap='more'>更多</text>
+    </view>
+    <view class='myCardContent' wx:if="{{hasUserInfo==true}}">
+      <text class='CardContent'>活动：{{aContent}}\n</text>
+      <text class='CardContent'>时间：{{aTime}}\n</text>
+      <text class='CardContent'>地点：{{aPlace}}\n</text>
+      <text class='CardContent'>人数：{{partners.length}}\n</text>
+      <text class='CardContent' wx:if="{{aContent==null}}">暂无活动，快去加入或者创建活动吧</text>
+    </view>
+    <view class='myCardContent' wx:if="{{hasUserInfo==false}}">
+      <text class='CardContent'>暂无活动，快去加入或者创建活动吧</text>
+    </view>
+  </view>
+
+  <view class='myActivityCard myFunctionCard'>
+    <view class='option'>
+      <image src="/imgs/edit.png" class='optionImg'></image>
+      <text>意见反馈</text>
+    </view>
+    <view class='option'>
+      <image src="/imgs/set.png" class='optionImg'></image>
+      <text>当前版本</text>
+      <text class='version'>0.5.0</text>
+    </view>
+    <view class='option'>
+      <image src="/imgs/service.png" class='optionImg'></image>
+      <text>联系客服</text>
+    </view>
+
+  </view>
+
+
+
+</view>

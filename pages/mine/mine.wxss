@@ -1,0 +1,84 @@
+/* pages/test/test.wxss */
+
+.part {
+  width: 650rpx;
+  height: 650rpx;
+  margin: 50rpx;
+  box-shadow: 0px 0px 4px #999;
+  border-radius: 15rpx;
+  position: relative;
+}
+
+.poster {
+  width: 650rpx;
+  height: 650rpx;
+  border-radius: 15rpx;
+  filter: blur(2rpx) grayscale(70%);
+}
+
+.day {
+  position: absolute;
+  top: 300rpx;
+  width: 650rpx;
+  text-align: center;
+}
+
+.day text {
+  color: #fff;
+  font-weight: bold;
+  font-size: 30pt;
+  text-shadow: 0rpx 0rpx 2rpx #555;
+}
+
+.time {
+  position: absolute;
+  top: 400rpx;
+  width: 650rpx;
+  text-align: center;
+}
+
+.time text {
+  color: #fff;
+  font-weight: bold;
+  font-size: 15pt;
+  text-shadow: 0rpx 0rpx 2rpx #555;
+}
+
+.content {
+  position: absolute;
+  top: 450rpx;
+  left: 5%;
+  width: 90%;
+  text-align: center;
+}
+
+.content text {
+  color: #fff;
+  font-weight: bold;
+  font-size: 10pt;
+  text-shadow: 0rpx 0rpx 2rpx #333;
+  max-height: 440rpx;
+}
+
+.delete {
+  position: absolute;
+  width: 100rpx;
+  height: 50rpx;
+  bottom: 50rpx;
+  left: 280rpx;
+}
+
+.delete button {
+  background-color: #6ba7ff;
+}
+
+.deleteIcon {
+  margin-top:5rpx;
+  width: 40rpx;
+  height: 40rpx;
+}
+
+.none {
+  text-align: center;
+  margin: 300rpx 50rpx;
+}

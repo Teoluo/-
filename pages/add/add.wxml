@@ -1,0 +1,71 @@
+<view class='main'>
+
+
+  <form bindsubmit="formSubmit" bindreset="cleanInput">
+    <textarea placeholder="我想和你一起去..." class='section' bindinput='textInput'>
+    </textarea>
+    <view class="page__bd">
+      <view class="weui-cells">
+        <view class="weui-cell">
+          <view class="weui-cell__bd">
+            <view class="weui-uploader">
+              <view class="weui-uploader__hd">
+                <view class="weui-uploader__title">图片上传</view>
+                <view class="weui-uploader__info">{{files.length}}/9</view>
+              </view>
+              <view class="weui-uploader__bd">
+                <view class="weui-uploader__files" id="uploaderFiles">
+                  <block wx:for="{{files}}" wx:key="*this">
+                    <view class="weui-uploader__file" bindtap="previewImage" id="{{item}}">
+                      <image class="weui-uploader__img" src="{{item}}" mode="aspectFill" />
+                    </view>
+                  </block>
+
+                </view>
+                <view class="weui-uploader__input-box" wx:if="{{files.length<9}}">
+                  <view class="weui-uploader__input" bindtap="chooseImage"></view>
+                </view>
+              </view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+
+    <!--开始时间  -->
+    <view class='options'>
+      <view class='timeChooseOne'>
+        <image src='/imgs/clock.png' class='optionImg'></image>
+        <text>开始时间</text>
+      </view>
+      <view class='timeChoose'>
+        <view>
+          <picker class="weui-btn" mode="date" value="{{date}}" start="2015-01-01" end="2020-12-31" bindchange="bindDateChange">
+            <text>{{holdDate}}</text>
+          </picker>
+        </view>
+        <view>
+          <picker class="weui-btn" mode="time" value="{{time}}" start="00:00" end="23:59" bindchange="bindTimeChange">
+            <text class='special'>{{holdTime}}</text>
+          </picker>
+        </view>
+      </view>
+    </view>
+
+    <view class='location'>
+      <image src='/imgs/map.png' class='optionImg'></image>
+      <view class='choose'>
+        <text bindtap='openMap'>活动地点</text>
+      </view>
+      <view class='lacationChoose'>
+        <text bindtap='openMap'>{{placeName}}</text>
+      </view>
+    </view>
+
+    <view class="btn-area">
+      <button bindtap='send' formType="reset">我要发起活动</button>
+    </view>
+  </form>
+
+
+</view>

@@ -1,0 +1,14 @@
+<!--pages/login/login.wxml-->
+<view class='container'>
+
+  <view>
+    <image src='/imgs/logo.png' class='poster'></image>
+  </view>
+  <view class='name'>
+    <text>袋鼠趣玩</text>
+  </view>
+  <view class='login'>
+    <button open-type="getUserInfo" bindgetuserinfo="userInfoHandler"> 微信登陆 </button>
+  </view>
+
+</view>

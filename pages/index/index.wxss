@@ -1,0 +1,148 @@
+/*search  */
+
+.searchbar-result {
+  margin-top: 0;
+  font-size: 14px;
+}
+
+.searchbar-result:before {
+  display: none;
+}
+
+.weui-cell {
+  padding: 12px 15px 12px 35px;
+}
+
+/*card 全局样式  */
+
+.card {
+  margin-bottom: 20rpx;
+  border-top: 1px solid #efeff4;
+  border-bottom: 1px solid #efeff4;
+  padding: 15rpx;
+  background-color: #fff;
+  box-shadow: 4px 2px 4px #eee;
+}
+
+/* 头部样式 */
+
+.card-header {
+  display: flex;
+  flex-direction: row;
+  height: 100rpx;
+  align-items: center;
+}
+
+.header-profile {
+  display: flex;
+  align-items: center;
+}
+
+.user-profile-img {
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 50%;
+}
+
+.header-info {
+  display: flex;
+  flex-direction: column;
+  padding-left: 20rpx;
+}
+
+.header-info .header-username {
+  font-size: 13pt;
+  font: bold;
+  height: 45rpx;
+}
+
+.header-info .header-time {
+  font-size: 8pt;
+  height: 30rpx;
+}
+
+/*body样式  */
+
+.card-body {
+  font-size: 14pt;
+  padding-bottom: 20rpx;
+  margin-left: 10rpx;
+  margin-right: 5rpx;
+  align-items: center;
+}
+
+.my-grids {
+  padding-left: 20rpx;
+  padding-top: 10rpx;
+  border: 0px;
+}
+
+.my-grid {
+  padding: 5px 5px;
+  width: 220rpx;
+  border: 0px;
+}
+
+.my_icon {
+  width: 200rpx;
+  height: 200rpx;
+}
+
+/*footer  */
+
+.card-footer {
+  display: flex;
+  flex-direction: row;
+  border-top: 1px solid #eee;
+  align-content: center;
+  font-size: 11pt;
+  padding-top: 10rpx;
+}
+
+.location {
+  width: 50%;
+  height: 40rpx;
+  position: relative;
+}
+
+.footer-img1 {
+  width: 35rpx;
+  height: 35rpx;
+  position: absolute;
+  top: 5rpx;
+}
+
+.footer-text1 {
+  position: absolute;
+  left: 40rpx;
+  height: 40rpx;
+  max-width: 300rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.joiner {
+  height: 40rpx;
+  width: 50%;
+  position: relative;
+}
+
+.footer-img2 {
+  width: 35rpx;
+  height: 35rpx;
+  position: absolute;
+  top: 5rpx;
+  right: 190rpx;
+}
+
+.footer-text2 {
+  position: absolute;
+  right: 15rpx;
+}
+
+
+.sub{
+  color: #888;
+  font-size: 12pt;
+}

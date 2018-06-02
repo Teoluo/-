@@ -1,0 +1,14 @@
+<view class="main">
+  <view class='card' wx:for="{{partners}}">
+    <view class='avatar'>
+      <image src="{{item.userAvatar}}"></image>
+    </view>
+    <view class='nickName'>
+      <text>{{item.userName}}</text>
+    </view>
+  </view>
+  <view wx:if="{{partners.length==0}}" class='null'>
+    <text>暂时还没有其他人</text>
+    <text>赶快去召集你的小伙伴吧</text>
+  </view>
+</view>

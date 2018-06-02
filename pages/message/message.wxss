@@ -1,0 +1,34 @@
+/* pages/message/message.wxss */
+
+.chat-item{
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1px solid #bbb;
+}
+
+.chatmate{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 16pt;
+}
+
+.chat-left image{
+  width: 90rpx;
+  height: 90rpx;
+  border-radius: 50%;
+  margin:10rpx;
+}
+
+.chat-right{
+  padding-top:10rpx; 
+}
+
+.time{
+  justify-content: flex-end;
+  font-size: 11pt;
+}
+
+.detail{
+  font-size: 11pt;
+}

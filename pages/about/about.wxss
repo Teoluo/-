@@ -1,0 +1,131 @@
+.main {
+  position: relative;
+  height: 100vh;
+}
+
+.login{
+  z-index: 5;
+  position: relative;
+  top: -250rpx;
+  color: #fff;
+}
+.userinfo {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  position: relative;
+}
+
+.under {
+  height: 400rpx;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.underColor {
+  height: 400rpx;
+  width: 100%;
+  background-color: #6BA7FF;
+  filter: blur(2rpx);
+}
+
+.aboutAvatar {
+  width: 180rpx;
+  height: 180rpx;
+  border-radius: 50%;
+  position: absolute;
+  top: 50rpx;
+  left: 290rpx;
+}
+
+.userNickname {
+  font-size: 15pt;
+  color: #fff;
+  width: 100%;
+  position: absolute;
+  top: 240rpx;
+  text-align: center;
+}
+
+/*card  */
+
+.myActivityCard {
+  position: absolute;
+  top: 340rpx;
+  width: 630rpx;
+  height: 300rpx;
+  background: #fff;
+  margin: 0rpx 50rpx;
+  /* border: 1px solid #eee; */
+  border-radius: 5px;
+  box-shadow: 0px 3px 5px #eee;
+  padding: 2rpx 10rpx;
+}
+
+.myCardTitle {
+  padding-top: 10rpx;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #ddd;
+  align-items: flex-end;
+}
+
+.CardTitle {
+  margin: 0rpx 10rpx;
+  font-size: 14pt;
+  font-weight: bold;
+}
+
+.more {
+  font-size: 11pt;
+  color: #888;
+  padding-bottom: 5rpx;
+}
+
+.myCardContent {
+  margin: 5rpx 10rpx;
+  font-size: 13pt;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.CardContent{
+  max-width: 200rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 12pt;
+}
+/*function  */
+
+.myFunctionCard {
+  top: 700rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 200rpx;
+}
+.myFunctionCard .option text {
+  font-size: 12pt;
+}
+.option {
+  font-size: 14pt;
+  margin: 10rpx 10rpx;
+  display: flex;
+}
+
+.optionImg {
+  margin-left: 10rpx;
+  margin-right: 30rpx;
+  width: 45rpx;
+  height: 45rpx;
+}
+
+.version {
+  margin-left: 300rpx;
+  color: #999;
+}

@@ -1,0 +1,9 @@
+/* pages/comment/comment.wxss */
+.contain{
+  display: flex;
+  flex-direction: column;
+}
+.commentTextarea{
+  width: 700rpx;
+  padding: 25rpx;
+}

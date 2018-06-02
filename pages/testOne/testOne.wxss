@@ -1,0 +1,205 @@
+/*box  */
+
+.box {
+  position: absolute;
+}
+
+/*partOne  */
+
+.partOne {
+  width: 750rpx;
+  height: 450rpx;
+}
+
+.partOneImg {
+  width: 750rpx;
+  height: 450rpx;
+}
+
+/*partTwo  */
+
+.partTwo {
+  position: relative;
+  background: #eee;
+  left: 650rpx;
+  top: -50rpx;
+  width: 100rpx;
+  height: 100rpx;
+}
+
+.partTwoImg {
+  width: 100rpx;
+  height: 100rpx;
+}
+
+/*partThr  */
+
+.partThr {
+  position: relative;
+  top: -80rpx;
+  margin: 0px 25rpx;
+}
+
+/*Title  */
+
+.title {
+  font-size: 20pt;
+  font-weight: bold;
+}
+
+.subTitle {
+  color: #888;
+}
+
+/*footer  */
+
+.card-footer {
+  display: flex;
+  flex-direction: row;
+  border-top: 1px solid #eee;
+  align-content: center;
+  font-size: 11pt;
+  padding-top: 10rpx;
+}
+
+.location {
+  width: 50%;
+  height: 40rpx;
+  position: relative;
+}
+
+.footer-img1 {
+  width: 35rpx;
+  height: 35rpx;
+  position: absolute;
+  top: 5rpx;
+}
+
+.footer-text1 {
+  position: absolute;
+  left: 40rpx;
+  height: 40rpx;
+  max-width: 110px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.joiner {
+  height: 40rpx;
+  width: 50%;
+  position: relative;
+}
+
+.footer-img2 {
+  width: 35rpx;
+  height: 35rpx;
+  position: absolute;
+  top: 5rpx;
+  right: 160rpx;
+}
+
+.footer-text2 {
+  position: absolute;
+  right: 5rpx;
+}
+
+.my_icon {
+  width: 200rpx;
+  height: 200rpx;
+}
+
+.myImg {
+  width: 100px;
+  height: 100px;
+}
+
+.myItem {
+  width: 100px;
+  height: 100px;
+  padding: 20rpx;
+}
+/* .turn{
+  padding-right:100rpx; 
+} */
+/*  留言板  */
+
+.commentBorad {
+  padding: 10rpx;
+  padding-bottom: 120rpx;
+}
+
+.write {
+  color: red;
+  text-align: end;
+  font-size: 12pt;
+}
+
+.userComments {
+  display: flex;
+  flex-direction: row;
+  margin-top: 25rpx;
+  margin-bottom: 25rpx;
+}
+
+.commentAvatar {
+  display: flex;
+  margin-top: 20rpx;
+  margin-right: 10rpx;
+}
+
+.userAvatar {
+  width: 60rpx;
+  height: 60rpx;
+  border-radius: 60rpx;
+  border: 1px solid #ccc;
+}
+
+.info {
+  width: 650rpx;
+}
+
+.comment {
+  width: 640rpx;
+  display: flex;
+  color: #888;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+.delete {
+  color: red;
+  text-indent: 2em;
+}
+
+.userInfo {
+  display: flex;
+  width: 660rpx;
+  flex-direction: row;
+  justify-content: space-between;
+  color: #666;
+}
+
+.noComment {
+  color: #555;
+  font-size: 14pt;
+  text-align: center;
+  margin: 40rpx 0rpx;
+}
+
+/* 参与  取消选项 */
+
+.options {
+  border-top: 1px solid #eee;
+  width: 100%;
+  position: fixed;
+  bottom: 0px;
+  height: 100rpx;
+  background: #fff;
+}
+
+.buttonStyle {
+  justify-content: center;
+  width: 60%;
+  height: 80%;
+}

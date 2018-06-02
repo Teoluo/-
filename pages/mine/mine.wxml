@@ -1,0 +1,19 @@
+<view class='part' wx:for="{{activities}}">
+  <image src='{{item.imgs[0]||posterUrl}}' class='poster' mode="aspectFill"></image>
+  <view class='day'>
+    <text>{{item.holdDate}}</text>
+  </view>
+  <view class='time'>
+    <text>{{item.holdTime}}</text>
+  </view>
+  <view class='content'>
+    <text>{{item.content}}</text>
+  </view>
+  <view class='delete'>
+    <button bindtap='delete' data-aid='{{item.id}}' class='Delete'><image src='/imgs/delete.png' class='deleteIcon'></image></button>
+  </view>
+</view>
+<view wx:if="{{activities.length==0}}" class='none'>
+  <text>暂时还有没有相关的活动\n</text>
+  <text>快去加入或者创建一个有趣的活动吧</text>
+</view>
