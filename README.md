@@ -10,3 +10,24 @@
 
 ### 演示视频
 https://v.qq.com/x/page/c0679e6vi4p.html
+### 图片展示
+- 首页
+i[img](https://github.com/Teoluo/ToPlay/blob/master/screenshots/1.PNG)
+
+- 发起活动
+i[img](https://github.com/Teoluo/ToPlay/blob/master/screenshots/3.PNG)
+
+- 我的
+i[img](https://github.com/Teoluo/ToPlay/blob/master/screenshots/4.PNG)
+
+- 选择地址
+i[img](https://github.com/Teoluo/ToPlay/blob/master/screenshots/5.PNG)
+
+- 发起活动2
+i[img](https://github.com/Teoluo/ToPlay/blob/master/screenshots/6.PNG)
+
+- 活动详情
+i[img](https://github.com/Teoluo/ToPlay/blob/master/screenshots/2.PNG)
+
+- 活动详情-留言
+i[img](https://github.com/Teoluo/ToPlay/blob/master/screenshots/7.PNG)
